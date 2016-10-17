@@ -17,10 +17,14 @@ $scope.checkDisplay = function () {
 
 function calculatNumericForString(array) {
     var totalStringValue = 0;
+    var txt1="Please Enter Data";
     var text= "good!";
     var text2= "too much!";
     for (var i = 0; i < array.length; i++) {
       totalStringValue +=i;
+    }
+    if (totalStringValue=="") {
+    return txt1;
     }
     if (totalStringValue<=3) {
       return text;
@@ -28,7 +32,7 @@ function calculatNumericForString(array) {
     if (totalStringValue > 3) {
        return text2;
     }
-    
+
   }
 };
 })();
