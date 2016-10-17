@@ -17,9 +17,9 @@ $scope.checkDisplay = function () {
 
 function calculatNumericForString(array) {
     var totalStringValue = 0;
-    var txt1="Please Enter Data";
-    var text= "good!";
-    var text2= "too much!";
+    var txt1="Please Enter Food Items more than 2";
+    var text= "Enjoy!";
+    var text2= "Too Much!";
     for (var i = 0; i < array.length; i++) {
       totalStringValue +=i;
     }
